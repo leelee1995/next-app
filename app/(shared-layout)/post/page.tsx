@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { api } from "@/convex/_generated/api";
 import { fetchQuery } from "convex/nextjs";
+import { cacheLife, cacheTag } from "next/cache";
 import Image from "next/image";
 import Link from "next/link";
 import { connection } from "next/server";
@@ -32,10 +33,9 @@ export default function Post() {
 }
 
 async function LoadPosts() {
-	/*"use cache";
+	"use cache";
 	cacheLife("hours");
-	cacheTag("post");*/
-	connection();
+	cacheTag("post");
 	const data = await fetchQuery(api.posts.getPosts);
 
 	return (
