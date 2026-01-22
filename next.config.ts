@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
 			},
 			{
 				protocol: "https",
-				hostname: "https://superb-fly-726.convex.cloud",
+				hostname: "superb-fly-726.convex.cloud",
 				port: "",
 			},
 		],
