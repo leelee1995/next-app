@@ -9,13 +9,11 @@ const nextConfig: NextConfig = {
 				protocol: "https",
 				hostname: "cdn-icons-png.flaticon.com",
 				port: "",
-				pathname: "/**",
 			},
 			{
 				protocol: "https",
 				hostname: "https://superb-fly-726.convex.cloud",
 				port: "",
-				pathname: "/api/storage/**",
 			},
 		],
 	},
