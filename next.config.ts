@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
 			},
 			{
 				protocol: "https",
-				hostname: "scintillating-impala-796.convex.cloud",
+				hostname: "https://superb-fly-726.convex.cloud",
 				port: "",
 				pathname: "/api/storage/**",
 			},
